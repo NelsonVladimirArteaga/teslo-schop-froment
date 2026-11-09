@@ -18,6 +18,7 @@ export const CustomHearder = () => {
   const [ searchParams,setSearchParams] = useSearchParams();
   const query = searchParams.get('query') || '';
   const {authStatus, logout, isAdmin} = useAuthStore();
+  console.log(query)
  
 
   const {gender} = useParams();
