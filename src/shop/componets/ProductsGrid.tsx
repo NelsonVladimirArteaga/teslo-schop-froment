@@ -15,7 +15,7 @@ products: Product[];
 export const ProductsGrid = ({products}:Props) => {
 const [searchParams, SetSearchParams] = useSearchParams();
 const viewMode = searchParams.get('viewMode') || 'grid';
-const [showFilters, setShowFilters] = useState('')
+const [showFilters, setShowFilters] = useState(true)
 const handleViewModeChange = (newViewMode:string) =>{
   SetSearchParams((prev)=>{
     prev.set('viewMode', newViewMode)
